@@ -7,7 +7,7 @@ firstGalaNodeAuth = ''
 
 def retrieve_messages(auth_code):
     headers = {
-        'authorization': auth_code
+        'authorization': firstGalaNodeAuth
     }
     r = requests.get(
         f'https://node-dashboard-api.gala.games/stats/dashboard', headers=headers)
